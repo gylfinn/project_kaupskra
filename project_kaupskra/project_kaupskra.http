@@ -1,0 +1,6 @@
+@project_kaupskra_HostAddress = http://localhost:5069
+
+GET {{project_kaupskra_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
