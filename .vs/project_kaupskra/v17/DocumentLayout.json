@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|c:\\users\\gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\controllers\\fasteignakaupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|solutionrelative:project_kaupskra\\controllers\\fasteignakaupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|c:\\users\\gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\controllers\\fasteignakaupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|solutionrelative:project_kaupskra\\controllers\\fasteignakaupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|c:\\users\\gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|solutionrelative:project_kaupskra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|c:\\users\\gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\controllers\\amountofdealscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|solutionrelative:project_kaupskra\\controllers\\amountofdealscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|c:\\users\\gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\controllers\\averagepriceofsquaremetercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|solutionrelative:project_kaupskra\\controllers\\averagepriceofsquaremetercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|c:\\users\\gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\controllers\\averagesquaremetercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|solutionrelative:project_kaupskra\\controllers\\averagesquaremetercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|c:\\users\\gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\controllers\\averagepricecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01753BA1-4EF3-4545-9A50-6EA05240BEB5}|project_kaupskra\\project_kaupskra.csproj|solutionrelative:project_kaupskra\\controllers\\averagepricecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 310,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Program.cs",
-              "RelativeDocumentMoniker": "project_kaupskra\\Program.cs",
-              "ToolTip": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Program.cs",
-              "RelativeToolTip": "project_kaupskra\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Title": "AmountOfDealsController.cs",
+              "DocumentMoniker": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\AmountOfDealsController.cs",
+              "RelativeDocumentMoniker": "project_kaupskra\\Controllers\\AmountOfDealsController.cs",
+              "ToolTip": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\AmountOfDealsController.cs",
+              "RelativeToolTip": "project_kaupskra\\Controllers\\AmountOfDealsController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwBwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T11:23:01.965Z",
+              "WhenOpened": "2024-03-18T16:08:43.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AveragePriceController.cs",
+              "DocumentMoniker": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\AveragePriceController.cs",
+              "RelativeDocumentMoniker": "project_kaupskra\\Controllers\\AveragePriceController.cs",
+              "ToolTip": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\AveragePriceController.cs",
+              "RelativeToolTip": "project_kaupskra\\Controllers\\AveragePriceController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwCcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T16:06:47.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AveragePriceOfSquareMeterController.cs",
+              "DocumentMoniker": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\AveragePriceOfSquareMeterController.cs",
+              "RelativeDocumentMoniker": "project_kaupskra\\Controllers\\AveragePriceOfSquareMeterController.cs",
+              "ToolTip": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\AveragePriceOfSquareMeterController.cs",
+              "RelativeToolTip": "project_kaupskra\\Controllers\\AveragePriceOfSquareMeterController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAcwGYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T16:01:57.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FasteignakaupsController.cs",
-              "DocumentMoniker": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\FasteignakaupsController.cs",
-              "RelativeDocumentMoniker": "project_kaupskra\\Controllers\\FasteignakaupsController.cs",
-              "ToolTip": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\FasteignakaupsController.cs",
-              "RelativeToolTip": "project_kaupskra\\Controllers\\FasteignakaupsController.cs",
-              "ViewState": "AQIAAN8BAAAAAAAAAAAqwOsBAAAUAAAA",
+              "Title": "FasteignakaupController.cs",
+              "DocumentMoniker": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\FasteignakaupController.cs",
+              "RelativeDocumentMoniker": "project_kaupskra\\Controllers\\FasteignakaupController.cs",
+              "ToolTip": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\FasteignakaupController.cs",
+              "RelativeToolTip": "project_kaupskra\\Controllers\\FasteignakaupController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T14:38:29.753Z",
+              "WhenOpened": "2024-03-18T14:46:59.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AverageSquareMeterController.cs",
+              "DocumentMoniker": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\AverageSquareMeterController.cs",
+              "RelativeDocumentMoniker": "project_kaupskra\\Controllers\\AverageSquareMeterController.cs",
+              "ToolTip": "C:\\Users\\Gylfi\\source\\repos\\project_kaupskra\\project_kaupskra\\Controllers\\AverageSquareMeterController.cs",
+              "RelativeToolTip": "project_kaupskra\\Controllers\\AverageSquareMeterController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T16:08:47.755Z",
               "EditorCaption": ""
             }
           ]

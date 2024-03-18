@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using project_kaupskra.Models;
+using System.Configuration;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,8 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-builder.Services.AddDbContext<FasteignakaupContext>(opt => opt.UseInMemoryDatabase("FasteignakaupList"));
-
+//builder.Services.AddDbContext<FasteignakaupContext>(opt => opt.UseInMemoryDatabase("FasteignakaupList"));
+builder.Services.AddDbContext<FasteignakaupContext>(options =>
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
