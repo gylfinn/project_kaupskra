@@ -1,6 +1,6 @@
 ﻿namespace project_kaupskra.Models
 {
-public class Fasteignakaup
+public class Kaupsamningur
 {
     public int ID { get; set; }
     public int FAERSLUNUMER { get; set; }

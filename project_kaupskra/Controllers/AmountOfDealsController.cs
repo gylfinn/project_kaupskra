@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using project_kaupskra.Models;
+using project_kaupskra.Data;
+using project_kaupskra.Helpers;
+using project_kaupskra.Interfaces;
 
 namespace project_kaupskra.Controllers
 {
@@ -13,65 +15,66 @@ namespace project_kaupskra.Controllers
     [ApiController]
     public class AmountOfDealsController : ControllerBase
     {
-        private readonly FasteignakaupContext _context;
+        private readonly KaupsamningurDbContext _context;
+        private readonly IAmountOfDealsRepository _amountOfDealsRepo;
 
-        public AmountOfDealsController(FasteignakaupContext context)
+        public AmountOfDealsController(KaupsamningurDbContext context, IAmountOfDealsRepository amountofdealsRepo)
         {
+            _amountOfDealsRepo = amountofdealsRepo;
             _context = context;
         }
 
         //GET: api/amountOfDeals
         [HttpGet("")]
-        public async Task<ActionResult<int>> GetAmountOfDeals()
+        public async Task<ActionResult<int>> GetAmountOfDeals([FromQuery] QueryObject query)
         {
-            var amountOfDeals = await _context.Fasteignakaup
-                .CountAsync();
+            var amountOfDeals = await _amountOfDealsRepo.GetAmountOfDeals(query);
 
             return amountOfDeals;
         }
 
-        //GET: api/amountOfDeals/ByDates/2023-03-16/2023-12-25
-        [HttpGet("ByDates/{date1}/{date2}")]
-        public async Task<ActionResult<int>> GetAmountOfDealsByDates(DateTime date1, DateTime date2)
-        {
-            var amountOfDeals = await _context.Fasteignakaup
-                .Where(i => i.UTGDAG >= date1 && i.UTGDAG <= date2)
-                .CountAsync();
+        ////GET: api/amountOfDeals/ByDates/2023-03-16/2023-12-25
+        //[HttpGet("ByDates/{date1}/{date2}")]
+        //public async Task<ActionResult<int>> GetAmountOfDealsByDates(DateTime date1, DateTime date2)
+        //{
+        //    var amountOfDeals = await _context.Fasteignakaup
+        //        .Where(i => i.UTGDAG >= date1 && i.UTGDAG <= date2)
+        //        .CountAsync();
 
-            return amountOfDeals;
-        }
+        //    return amountOfDeals;
+        //}
 
-        //GET: api/amountOfDeals/ByTowns
-        [HttpGet("ByTowns")]
-        public async Task<ActionResult<int>> GetAmountOfDealsByTowns([FromQuery] string[] listofTowns)
-        {
-            var amountOfDeals = await _context.Fasteignakaup
-                .Where(i => listofTowns.Contains(i.SVEITARFELAG))
-                .CountAsync();
+        ////GET: api/amountOfDeals/ByTowns
+        //[HttpGet("ByTowns")]
+        //public async Task<ActionResult<int>> GetAmountOfDealsByTowns([FromQuery] string[] listofTowns)
+        //{
+        //    var amountOfDeals = await _context.Fasteignakaup
+        //        .Where(i => listofTowns.Contains(i.SVEITARFELAG))
+        //        .CountAsync();
 
-            return amountOfDeals;
-        }
+        //    return amountOfDeals;
+        //}
 
-        //GET: api/amountOfDeals/ByPostcodes
-        [HttpGet("ByPostcodes")]
-        public async Task<ActionResult<int>> GetAmountOfDealsByPostcodes([FromQuery] int[] listofPostcodes)
-        {
-            var amountOfDeals = await _context.Fasteignakaup
-                .Where(i => listofPostcodes.Contains(i.POSTNR))
-                .CountAsync();
+        ////GET: api/amountOfDeals/ByPostcodes
+        //[HttpGet("ByPostcodes")]
+        //public async Task<ActionResult<int>> GetAmountOfDealsByPostcodes([FromQuery] int[] listofPostcodes)
+        //{
+        //    var amountOfDeals = await _context.Fasteignakaup
+        //        .Where(i => listofPostcodes.Contains(i.POSTNR))
+        //        .CountAsync();
 
-            return amountOfDeals;
-        }
+        //    return amountOfDeals;
+        //}
 
-        //GET: api/amountOfDeals/ByHousing
-        [HttpGet("ByHousing")]
-        public async Task<ActionResult<int>> GetAmountOfDealsByHousing([FromQuery] string[] listofHousing)
-        {
-            var amountOfDeals = await _context.Fasteignakaup
-                .Where(i => listofHousing.Contains(i.TEGUND))
-                .CountAsync();
+        ////GET: api/amountOfDeals/ByHousing
+        //[HttpGet("ByHousing")]
+        //public async Task<ActionResult<int>> GetAmountOfDealsByHousing([FromQuery] string[] listofHousing)
+        //{
+        //    var amountOfDeals = await _context.Fasteignakaup
+        //        .Where(i => listofHousing.Contains(i.TEGUND))
+        //        .CountAsync();
 
-            return amountOfDeals;
-        }
+        //    return amountOfDeals;
+        //}
     }
 }

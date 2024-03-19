@@ -1,6 +1,6 @@
-﻿namespace project_kaupskra.Models
+﻿namespace project_kaupskra.DTOs
 {
-    public class FasteignakaupDTO
+    public class KaupsamningurDTO
     {
         public int ID { get; set; }
         public int FAERSLUNUMER { get; set; }

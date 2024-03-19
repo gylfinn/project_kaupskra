@@ -5,13 +5,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using project_kaupskra.Models;
+using project_kaupskra.Data;
+
 
 #nullable disable
 
 namespace project_kaupskra.Migrations
 {
-    [DbContext(typeof(FasteignakaupContext))]
+    [DbContext(typeof(KaupsamningurDbContext))]
     [Migration("20240318142223_InitialCreate")]
     partial class InitialCreate
     {
